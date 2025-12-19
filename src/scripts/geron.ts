@@ -1,3 +1,3 @@
-const hello = "hjdsfhofsd"
+const changeText = ".ts"
 
-export default hello;//
+export default changeText;
