@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("hjdsfhofsd")})();
+(async()=>{const o=(await(async()=>fetch("https://jsonplaceholder.typicode.com/posts"))()).json();console.log(o)})();
