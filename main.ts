@@ -21,10 +21,10 @@
 //         console.log("Promise finally")
 //     })
 
-interface UserModel{
-    name: string
-    age: number
-}
+// interface UserModel{
+//     name: string
+//     age: number
+// }
 
 
 // const checkResult = async () => {
@@ -42,19 +42,19 @@ interface UserModel{
 //     console.log("privet")
 // }
 
-const getResult = async (status: boolean) => {
-    return new Promise((resolve, reject) => {
+// const getResult = async (status: boolean) => {
+//     return new Promise((resolve, reject) => {
         
 
-        setTimeout(() => {
-            if (status) {
-                resolve("true");
-            } else {
-                reject("Error")
-            }
-        }, 1000)
-    });
-}
+//         setTimeout(() => {
+//             if (status) {
+//                 resolve("true");
+//             } else {
+//                 reject("Error")
+//             }
+//         }, 1000)
+//     });
+// }
 
 // const checkResult = async () => {
 //     const user = (await getResult(false)) as UserModel;
@@ -67,15 +67,26 @@ const getResult = async (status: boolean) => {
 //     console.log(error)
 // })
 
-const getUser = async () => {
-    return fetch("https://jsonplaceholder.typicode.com/posts/1");
-}
+// const getUser = async () => {
+//     return fetch("https://jsonplaceholder.typicode.com/posts/1");
+// }
 
-const checkResult = async () => {
-    const response = (await getUser()).json()
-    console.log(response)
+// const checkResult = async () => {
+//     const response = (await getUser()).json()
+//     console.log(response)
 
-}
+// }
 
-checkResult()
+// checkResult()
 
+import { Order } from "./src/models/Order"
+
+const user = "Artyom"
+const address = "c. Pavlodar, st.Mira 17/1, pod_1, kv15"
+const summ = 50000
+
+const order = new Order({user, address, summ})
+
+order.Address = "qwerty";
+
+console.log(order.info)
