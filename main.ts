@@ -1,5 +1,3 @@
-
-
 // const getResult = async (status: boolean) => {
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
