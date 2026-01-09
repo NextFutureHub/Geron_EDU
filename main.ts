@@ -70,7 +70,7 @@ const getResult = async (status: boolean) => {
 // })
 
 const getUser = async () => {
-    return fetch("https://jsonplaceholder.typicode.com/posts");
+    return fetch("https://jsonplaceholder.typicode.com/posts/1");
 }
 
 const checkResult = async () => {
